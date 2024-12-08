@@ -1,1 +1,94 @@
-/home/jak/.config/waybar/style.css
+* {
+    border: none;
+    /* font-family: Font Awesome, Roboto, Arial, sans-serif; */
+    font-family: "Cantarell", "Font Awesome";
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+window {
+	font-weight: bold;
+    font-style: normal;
+}
+window#waybar {
+    background: rgba(0, 0, 0, .6);
+    border-radius: 0;
+}
+/*-----module groups----*/
+.modules-right {
+	/* background-color: rgba(26, 26, 26, 0.8); */
+    margin: 2px 10px 0 0;
+}
+.modules-center {
+	/* background-color: rgba(99, 99, 99, 0.3); */
+    margin: 2px 0 0 0;
+}
+.modules-left {
+    margin: 2px 0 0 10px;
+}
+/*-----modules indv----*/
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.5);
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+	background: rgb(4, 133, 122);
+}
+
+#workspaces button.visible {
+    background: radial-gradient(rgb(34, 211, 235),rgb(0, 0, 0));
+    
+
+  }
+
+#workspaces button.focused {
+	background-color: rgba(0,43,51,0.85);
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#custom-power,
+#custom-menu,
+#idle_inhibitor {
+    padding: 0 10px;
+}
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+#custom-power {
+    background-color: rgba(0, 179, 170, 0.6);
+    border-radius: 100px;
+    margin: 5px 5px;
+    padding: 1px 1px 1px 6px;
+    font-style: normal;
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+    color: #2dcc36;
+    font-style: normal;
+}
+#pulseaudio.muted {
+    color: #cc3436;
+}
+#temperature.critical {
+    color: #cc3436;
+}
+/*-----Colors----*/
+/*
+ *rgba(0,85,102,1),#005566 --> Indigo(dye)
+ *rgba(0,43,51,1),#002B33 --> Dark Green 
+ *rgba(0,153,153,1),#009999 --> Persian Green 
+ *
+ */
