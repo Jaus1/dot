@@ -1,8 +1,7 @@
+ZSH_CFG_DIR=$HOME/dot/zsh
+ZSH_PLUGIN_DIR=$HOME/dot/zsh/plugins
 
-ZSH_CFG_DIR=$HOME/.zsh
-ZSH_PLUGIN_DIR=$HOME/.zsh/plugins
-
-alias ls='ls --color=auto'
+alias ls='ls -a --color=auto'
 alias ll='ls -l'
 alias la='ls -al'
 
