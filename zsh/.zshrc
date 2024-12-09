@@ -5,6 +5,8 @@ alias ls='ls -a --color=auto'
 alias ll='ls -l'
 alias la='ls -al'
 
+fastfetch
+
 
 # load module functions
 cfg_modules=(
