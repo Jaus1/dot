@@ -2,9 +2,9 @@
     border: none;
     /* font-family: Font Awesome, Roboto, Arial, sans-serif; */
     font-family: "Cantarell", "Font Awesome";
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: 0;
 }
 
 window {
@@ -12,7 +12,7 @@ window {
     font-style: normal;
 }
 window#waybar {
-    background: rgba(0, 0, 0, .6);
+    background: rgba(41, 41, 41, 0.8);
     border-radius: 0;
 }
 /*-----module groups----*/
@@ -39,7 +39,7 @@ window#waybar {
 }
 
 #workspaces button.visible {
-    background: radial-gradient(rgb(34, 211, 235),rgb(0, 0, 0));
+    background: rgba(133, 133, 133, 0.6);
     
 
   }
