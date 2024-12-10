@@ -5,7 +5,6 @@ alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -al'
 
-
 # load module functions
 cfg_modules=(
     ${ZSH_PLUGIN_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
