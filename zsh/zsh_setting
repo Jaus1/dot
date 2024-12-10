@@ -13,8 +13,9 @@ done
 compinit -C
 
 # Auto complete with case insenstivity
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # ignore case
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS} = # colorz ! 
 # History 
  [ -z "$HISTFILE" ] && HISTFILE="/tmp/.zsh_history"
 HISTSIZE=1000
@@ -34,4 +35,5 @@ setopt bsd_echo 	      # echo like bsd
 
 # setopt autocd
 
+# Change zsh-z key to f
 ZSHZ_CMD=f; export ZSHZ_CMD

@@ -2,9 +2,10 @@
     border: none;
     /* font-family: Font Awesome, Roboto, Arial, sans-serif; */
     font-family: "Font Awesome";
-    font-size: 15px;
+    /* font-family: "FiraCode Nerd Font Propo"; */
+    font-size: 14px;
     color: rgb(255, 255, 255);
-    border-radius: 0;
+    border-radius: 5px;
 }
 
 window {
@@ -18,18 +19,18 @@ window#waybar {
 /*-----module groups----*/
 .modules-right {
 	/* background-color: rgba(26, 26, 26, 0.8); */
-    margin: 2px 10px 0 0;
+    margin: 0 20px 0 0;
 }
 .modules-center {
 	/* background-color: rgba(99, 99, 99, 0.3); */
     margin: 2px 0 0 0;
 }
 .modules-left {
-    margin: 2px 0 0 10px;
+    margin: 0 0 0 0;
 }
 /*-----modules indv----*/
 #workspaces button {
-    padding: 1px 5px;
+    padding: 0 20px 0 10px; /* (T R B L) */
     background-color: transparent;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -40,9 +41,7 @@ window#waybar {
 
 #workspaces button.visible {
     background: rgba(133, 133, 133, 0.6);
-    
-
-  }
+}
 
 #workspaces button.focused {
 	background-color: rgba(0,43,51,0.85);
@@ -67,13 +66,6 @@ window#waybar {
     color: #cc3436;
     font-weight: bold;
 }
-#custom-power {
-    background-color: rgba(165, 165, 165, 0.6);
-    border-radius: 100px;
-    margin: 5px 5px;
-    padding: 1px 1px 1px 6px;
-    font-style: normal;
-}
 /*-----Indicators----*/
 #idle_inhibitor.activated {
     color: #2dcc36;
@@ -82,9 +74,8 @@ window#waybar {
 #pulseaudio.muted {
     color: #cc3436;
 }
-#temperature.critical {
-    color: #cc3436;
-}
+
+
 /*-----Colors----*/
 /*
  *rgba(0,85,102,1),#005566 --> Indigo(dye)

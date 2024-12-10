@@ -15,52 +15,62 @@
     "layer": "top",
     "position": "top",
     "height": 36,
+    "modules-left": [
+        "hyprland/workspaces",
+         "hyprland/mode"
+        ],
+    "modules-center": [
+        // "clock#date",
+        //  "clock#time",
+         "hyprland/window"
+        ],
+    "modules-right": [
+        "network", 
+        "pulseaudio",
+        "clock"
+    ],
 
 
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-center": ["clock#date", "clock#time", "idle_inhibitor"],
-    "modules-right": ["tray", "custom/scratchpad-indicator", "network", "pulseaudio", "custom/power"],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        "format":"<span font-style='italic'>{name}</span> <span font='20' rise='-2000'>{icon}</span>",
+            "format-icons": {
+            "1": "",
+            "2": "󰨞",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "", 
+        }
+    },
 
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
 
-    "hyprland/workspaces": {
-        "disable-scroll": true,
-        // "all-outputs": true,
-        "on-click": "activate",
-        "format":" {icon} ",
-            "format-icons": {
-            "1": "1 ",
-            "2": "2 ",
-            "3": "3 ",
-            "4": "4",
-            "5": "5",
-            // "6": "6", 
-        }
+
+    "hyprland/window": {
+        "format": "<span font-weight='normal'>{}</span>",
+        "max-length": 40
     },
+
+
+    
 
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
-    "network": {
-        "format-wifi": "({signalStrength}%) ",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", 
-        "max-length": 50,
-        "on-click": "kitty -e 'nmtui'"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        },
-    },
 
-    "tray": {
-        "icon-size": 20,
-        "spacing": 10
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": " {ifname}",
+        "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "Disconnected ⚠ {ifname}",
+        "format-alt": " {ifname}: {ipaddr}/{cidr}",
     },
 
     "pulseaudio": {
@@ -79,26 +89,42 @@
             "car": "",
             "default": ["", "", ""]
         },
-        // "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        // "on-click-right": "foot -a pw-top pw-top"
     },
 	"custom/power": {
 		"format": " ",
 		"on-click": "wlogout"
 	},
 
-    "clock#time": {
-        "interval": 60,
-        "format": "{:%I:%M %p}",
+    "clock": {
+        "format": "{:%a %d %b %I:%M}",
         "tooltip": false
     },
 
-    "clock#date": {
-      "interval": 10,
-      "format": "{:%a, %b %e}",
-      "tooltip": false
-    //   "on-click": "gnome-calendar"
-    }
+    // "clock": {
 
+    //     "interval": 10,
+    //     "format-alt": "{%m/%d/%Y %H:%M}",
+    //     "format": "{<big>%I:%M %p %a %b %d</big>}",
+    //     "tooltip-format": "{%e %B %Y}",
+        
+    //     // "on-click-right": "gsimplecal"
+        
+    //     }, 
+
+    // "clock#time": {
+    //     "interval": 60,
+    //     "format": "{:%I:%M %p}",
+    //     "tooltip": false
+    // },
+
+    // "clock#date": {
+    //   "interval": 10,
+    //   "format": "{:%a, %b %e}",
+    //   "tooltip": false
+    // //   "on-click": "gnome-calendar"
+    // },
 
 
 }
