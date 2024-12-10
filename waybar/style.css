@@ -35,7 +35,7 @@ window#waybar {
 }
 #workspaces button:hover {
     box-shadow: inherit;
-	background: rgb(4, 133, 122);
+	background: rgba(133, 133, 133, 0.6);
 }
 
 #workspaces button.visible {
@@ -68,7 +68,7 @@ window#waybar {
     font-weight: bold;
 }
 #custom-power {
-    background-color: rgba(0, 179, 170, 0.6);
+    background-color: rgba(165, 165, 165, 0.6);
     border-radius: 100px;
     margin: 5px 5px;
     padding: 1px 1px 1px 6px;
