@@ -17,6 +17,7 @@ for cfg_file ($cfg_files) {
 # load module functions
 cfg_modules=(
     ${ZSH_PLUGIN_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
+    ${ZSH_PLUGIN_DIR}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 )
 
 for cfg_module ($cfg_modules) {

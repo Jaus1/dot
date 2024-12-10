@@ -31,3 +31,5 @@ unsetopt beep   	      # no beeping
 unsetopt flow_control 	# ^S/^Q disabled
 setopt LOCAL_TRAPS
 setopt bsd_echo 	      # echo like bsd
+
+setopt autocd           #
