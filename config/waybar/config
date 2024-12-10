@@ -16,8 +16,8 @@
     "position": "top",
     "height": 36,
     "modules-left": [
-        "hyprland/workspaces",
-         "hyprland/mode"
+        "hyprland/workspaces"
+        //  "hyprland/mode"
         ],
     "modules-center": [
         // "clock#date",
@@ -35,7 +35,7 @@
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
-        "format":"<span font-style='italic'>{name}</span> <span font='20' rise='-2000'>{icon}</span>",
+        "format":"<span font='10' font-style='italic'>{name}</span> <span font='16' rise='-2000'>{icon}</span>",
             "format-icons": {
             "1": "",
             "2": "󰨞",
@@ -46,18 +46,19 @@
         }
     },
 
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
+    // "hyprland/mode": {
+    //     "format": "<span style=\"italic\">{}</span>"
+    // },
 
 
     "hyprland/window": {
-        "format": "<span font-weight='normal'>{}</span>",
+        // "format": "<span font-weight='normal'>{}</span>",
         "max-length": 40
     },
 
-
-    
+    "tray": {
+        "spacing": 10
+    },
 
     // -------------------------------------------------------------------------
     // Modules
@@ -92,39 +93,16 @@
         "on-click": "pavucontrol",
         // "on-click-right": "foot -a pw-top pw-top"
     },
-	"custom/power": {
-		"format": " ",
-		"on-click": "wlogout"
-	},
 
     "clock": {
+        "interval": 10,
         "format": "{:%a %d %b %I:%M}",
-        "tooltip": false
+        "format-alt": "{:%Y-%m-%d}",
+        
+        // "tooltip": false
     },
 
-    // "clock": {
 
-    //     "interval": 10,
-    //     "format-alt": "{%m/%d/%Y %H:%M}",
-    //     "format": "{<big>%I:%M %p %a %b %d</big>}",
-    //     "tooltip-format": "{%e %B %Y}",
-        
-    //     // "on-click-right": "gsimplecal"
-        
-    //     }, 
-
-    // "clock#time": {
-    //     "interval": 60,
-    //     "format": "{:%I:%M %p}",
-    //     "tooltip": false
-    // },
-
-    // "clock#date": {
-    //   "interval": 10,
-    //   "format": "{:%a, %b %e}",
-    //   "tooltip": false
-    // //   "on-click": "gnome-calendar"
-    // },
 
 
 }
