@@ -11,7 +11,7 @@
     // Global configuration
     // -------------------------------------------------------------------------
 
-    "output": [ "DP-2" , "DP-1"],
+    "output": [ "DP-2" , "DP-1", "DP-3"],
     "layer": "top",
     "position": "top",
     "height": 36,
@@ -79,7 +79,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        // "on-click": "pavucontrol"
     },
 	"custom/power": {
 		"format": " ",
