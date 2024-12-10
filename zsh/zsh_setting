@@ -14,7 +14,7 @@ compinit -C
 
 # Auto complete with case insenstivity
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-
+zstyle ':completion:*' menu select
 # History 
  [ -z "$HISTFILE" ] && HISTFILE="/tmp/.zsh_history"
 HISTSIZE=1000
@@ -32,4 +32,6 @@ unsetopt flow_control 	# ^S/^Q disabled
 setopt LOCAL_TRAPS
 setopt bsd_echo 	      # echo like bsd
 
-setopt autocd           #
+# setopt autocd
+
+ZSHZ_CMD=f; export ZSHZ_CMD
