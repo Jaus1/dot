@@ -1,11 +1,9 @@
 ZSH_CFG_DIR=$HOME/dot/zsh
 ZSH_PLUGIN_DIR=$HOME/dot/zsh/plugins
 
-alias ls='ls -a --color=auto'
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -al'
-
-fastfetch
 
 
 # load module functions
