@@ -21,33 +21,50 @@ bold_italic.family = "Hack"
 size = 15.0
 
 # ====================== COLORS ======================
-[colors]
-indexed_colors = [] # Default
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
 
-# Transparent background colors
-transparent_background_colors = false  # Default
+# Normal colors
+[colors.normal]
+black   = '#000000'
+red     = '#cd0000'
+green   = '#00cd00'
+yellow  = '#cdcd00'
+blue    = '#0000ee'
+magenta = '#cd00cd'
+cyan    = '#00cdcd'
+white   = '#e5e5e5'
 
-# Draw bold text with bright colors
-draw_bold_text_with_bright_colors = false  # Default
+# Bright colors
+[colors.bright]
+black   = '#7f7f7f'
+red     = '#ff0000'
+green   = '#00ff00'
+yellow  = '#ffff00'
+blue    = '#5c5cff'
+magenta = '#ff00ff'
+cyan    = '#00ffff'
+white   = '#ffffff'
 
 
 # ====================== CURSOR ======================
 [cursor]
 
 # Cursor style
-style = { shape = "Block", blinking = "On" }  # Default: shape = "Block", blinking = "Off"
+style = { shape = "Block", blinking = "Always" }  # Default: shape = "Block", blinking = "Off"
 
 # Vi mode cursor style (falls back to the active value of the normal cursor if "None")
 vi_mode_style = "None"  # Default: "None"
 
 # Cursor blinking interval in milliseconds
-blink_interval = 750  # Default: 750
+blink_interval = 500  # Default: 750
 
 # Time after which cursor stops blinking, in seconds
-blink_timeout = 5  # Default: 5
+# blink_timeout = 5  # Default: 5
 
 # When true, the cursor will be rendered as a hollow box when the window is not focused
 unfocused_hollow = true  # Default: true
 
 # Thickness of the cursor relative to the cell width
-thickness = 0.15  # Default: 0.15
+thickness = 0.1  # Default: 0.15

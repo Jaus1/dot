@@ -1,0 +1,32 @@
+ZSH_CFG_DIR=$HOME/dot/zsh
+ZSH_PLUGIN_DIR=$HOME/dot/zsh/plugins
+
+
+# load funcs
+cfg_files=(
+    $ZSH_CFG_DIR/zsh_alias
+    $ZSH_CFG_DIR/zsh_setting
+)
+
+# compile and load cfg files
+for cfg_file ($cfg_files) {
+    source $cfg_file;
+}
+
+
+# load module functions
+cfg_modules=(
+    ${ZSH_PLUGIN_DIR}/zsh-autosuggestions/zsh-autosuggestions.zsh
+)
+
+for cfg_module ($cfg_modules) {
+    source $cfg_module;
+}
+
+# ZSH_AUTOSUGGEST_CONFIG
+ZSH_AUTOSUGGEST_USE_ASYNC=true;
+
+
+# Load prompt
+export STARSHIP_CONFIG=$HOME/dot/config/starship/starship.toml
+eval "$(starship init zsh)"

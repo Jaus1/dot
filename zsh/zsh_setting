@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+setopt extendedglob
+
+# Command Completion
+
+autoload -Uz compinit
+
+for dump in /tmp/.zcompdump(N.mh+24); do
+  compinit
+done
+
+compinit -C
+
+# Auto complete with case insenstivity
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# History 
+ [ -z "$HISTFILE" ] && HISTFILE="/tmp/.zsh_history"
+HISTSIZE=1000
+SAVEHIST=1000
+setopt hist_ignore_dups
+setopt hist_expire_dups_first
+setopt hist_find_no_dups
+setopt inc_append_history
+setopt share_history
+setopt hist_reduce_blanks
+
+# System
+unsetopt beep   	      # no beeping
+unsetopt flow_control 	# ^S/^Q disabled
+setopt LOCAL_TRAPS
+setopt bsd_echo 	      # echo like bsd
