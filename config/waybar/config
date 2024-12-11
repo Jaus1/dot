@@ -101,7 +101,7 @@
 
     "clock#date": {
         "interval": 60,
-        "format": "{:%a, %b %d} <span rise='1200'></span>",
+        "format": "{:%a, %D} <span rise='1200'></span>",
         // "format-alt": "",
         "tooltip": false
     },

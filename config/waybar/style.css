@@ -22,7 +22,7 @@ window#waybar {
 
 #window, #clock, #network, #pulseaudio {
     padding: 5px 10px;
-    margin: 5px 5px;
+    margin: 5px 5px 5px 0;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
@@ -97,13 +97,8 @@ button:hover {
 
 #clock.time {
     font-size: 15px;
-    color: yellow;
+    /* color: yellow; */
 }
-
-/* #clock.time {
-    font-size: 14px;
-} */
-
 
 
 /*-----Colors----*/
