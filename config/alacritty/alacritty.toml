@@ -16,11 +16,11 @@ dynamic_title = true
 
 # ====================== FONT ======================
 [font]
-normal.family = "Terminus"
+normal.family = "Hack"
 normal.style = "Regular"
-bold.family = "Terminus"
-italic.family = "Terminus"
-bold_italic.family = "Terminus"
+bold.family = "Hack"
+italic.family = "Hack"
+bold_italic.family = "Hack"
 size = 12.0
 offset.x = 0  # For letter spacing (default: 0)
 offset.y = 2  # For line spacing (default: 0)

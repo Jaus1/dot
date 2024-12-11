@@ -1,4 +1,5 @@
 format = """
+$os\
 $username\
 $hostname\
 $directory\
@@ -9,7 +10,7 @@ $cmd_duration\
 $fill\
 
 $python\
-$os\
+
 $line_break\
 $character\
 """
@@ -18,7 +19,7 @@ add_newline = false
 
 [os]
 disabled = false
-format='[ $symbol ]($style)'
+format='[$symbol]($style)'
 
 [username]
 disabled = true
@@ -55,7 +56,7 @@ symbol = "."
 style = "bright-black"
 
 [character]
-success_symbol = "[❯](white)"
+success_symbol = "[❯](bright-black)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
@@ -164,7 +165,7 @@ Illumos = "󰈸 "
 Kali = " "
 Linux = " "
 Mabox = " "
-Macos = " "
+Macos = " "
 Manjaro = " "
 Mariner = " "
 MidnightBSD = " "
