@@ -10,7 +10,7 @@ $cmd_duration\
 $fill\
 
 $python\
-
+$time\
 $line_break\
 $character\
 """
@@ -24,15 +24,15 @@ format='[$symbol]($style)'
 [username]
 disabled = true
 show_always = true
-style_user = "purple bold"
-format ="[$user]($style)@"
+style_user = "bright-black"
+format ="[$user@]($style)"
 
 [hostname]
 ssh_only = false
 disabled = false
-style = "bright-black "
+style = "bright-black"
 ssh_symbol = " "
-format = '[$ssh_symbol$hostname]($style) '
+format = '[$ssh_symbol$hostname:]($style) '
 
 [directory]
 style = "cyan bold"
@@ -42,22 +42,36 @@ read_only = "󰌾"
 
 [git_branch]
 symbol = ""
-style = "green bold"
-format = "[on](white) [$branch]($style)"
+style = "green"
+format = "[on](white italic) [$symbol $branch]($style)"
 
 [git_status]
-style = 'fg:green'
-# format = "[[($all_status)](purple bold)($ahead_behind$stashed)]($style)"
-format = "[$all_status ](218)"
+# format = "[[($modifed)](purple bold)($ahead_behind$stashed)]($style)"
+# format = "[$all_status ](218)"
+# format = "[[ $all_status ](purple bold) ($modified)](purple bold)"
+# modified = "*"
+
+format = "[ $all_status ]($style)"
+style = "green bold"
 
 [fill]
 symbol = "-"
 style = "bright-black"
 
+[time]
+disabled = false
+format = '🕙[\[ $time \]]($style) '
+time_format = '%T'
+utc_time_offset = '-5'
+time_range = '10:00:00-14:00:00'
+
 [character]
-success_symbol = "[❯](bright-black)"
+success_symbol = "[](white bold)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
+
+# ❯
+# ❮
 
 
 [aws]

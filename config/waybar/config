@@ -35,14 +35,14 @@
         "disable-scroll": true,
         // "all-outputs": true, // false only shows workspace on active screen
         "on-click": "activate",
-        "format":"<span font='10' font-style='italic'>{name}</span> <span font='16' rise='-2000'>{icon}</span>",
+        "format":"<span font='10' font-style='italic'>{name}</span> <span font='14' rise='-2000'>{icon}</span>",
             "format-icons": {
             "1": "",
             "2": "󰨞",
             "3": "",
-            "4": "",
-            "5": "",
-            "6": "", 
+            "4": "󰛨",
+            "5": "󰛨",
+            "6": "󰛨", 
         }
     },
 
