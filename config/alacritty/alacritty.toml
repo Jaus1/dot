@@ -21,35 +21,37 @@ normal.style = "Regular"
 bold.family = "Terminus"
 italic.family = "Terminus"
 bold_italic.family = "Terminus"
-size = 14.0
+size = 12.0
+offset.x = 0  # For letter spacing (default: 0)
+offset.y = 2  # For line spacing (default: 0)
+
 
 # ====================== COLORS ======================
+# GNOME Terminal Tango Dark
+
 [colors.primary]
 background = '#000000'
-foreground = '#ffffff'
+foreground = '#d3d7cf'
 
-# Normal colors
 [colors.normal]
-black   = '#000000'
-red     = '#cd0000'
-green   = '#00cd00'
-yellow  = '#cdcd00'
-blue    = '#0000ee'
-magenta = '#cd00cd'
-cyan    = '#00cdcd'
-white   = '#e5e5e5'
+black = '#2e3436'
+red = '#cc0000'
+green = '#4e9a06'
+yellow = '#c4a000'
+blue = '#3465a4'
+magenta = '#75507b'
+cyan = '#06989a'
+white = '#d3d7cf'
 
-# Bright colors
 [colors.bright]
-black   = '#7f7f7f'
-red     = '#ff0000'
-green   = '#00ff00'
-yellow  = '#ffff00'
-blue    = '#5c5cff'
-magenta = '#ff00ff'
-cyan    = '#00ffff'
-white   = '#ffffff'
-
+black = '#555753'
+red = '#ef2929'
+green = '#8ae234'
+yellow = '#fce94f'
+blue = '#729fcf'
+magenta = '#ad7fa8'
+cyan = '#34e2e2'
+white = '#eeeeec'
 
 # ====================== CURSOR ======================
 [cursor]
