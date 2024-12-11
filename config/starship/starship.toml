@@ -32,7 +32,7 @@ ssh_only = false
 disabled = false
 style = "bright-black"
 ssh_symbol = " "
-format = '[$ssh_symbol$hostname:]($style) '
+format = '[$ssh_symbol$hostname]($style) '
 
 [directory]
 style = "cyan bold"
@@ -57,13 +57,6 @@ style = "green bold"
 [fill]
 symbol = "-"
 style = "bright-black"
-
-[time]
-disabled = false
-format = '🕙[\[ $time \]]($style) '
-time_format = '%T'
-utc_time_offset = '-5'
-time_range = '10:00:00-14:00:00'
 
 [character]
 success_symbol = "[](white bold)"
