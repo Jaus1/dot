@@ -47,8 +47,8 @@ format = "[on](white) [$branch]($style)"
 
 [git_status]
 style = 'fg:green'
-# format = '([ $all_status$ahead_behind]($style) )'
-format = "[[($all_status)](218) ($ahead_behind$stashed)]($style)"
+# format = "[[($all_status)](purple bold)($ahead_behind$stashed)]($style)"
+format = "[$all_status ](218)"
 
 [fill]
 symbol = "-"
