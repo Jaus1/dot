@@ -49,7 +49,7 @@
 
     "hyprland/window": {
         // "format": "<span font-weight='normal'>{}</span>",
-        "max-length": 40
+        "max-length": 30
     },
 
     "tray": {
@@ -102,7 +102,7 @@
     "clock#date": {
         "interval": 60,
         "format": "{:%a, %D} <span rise='1200'></span>",
-        // "format-alt": "",
+        "format-alt": "{:%F} <span rise='1200'></span>",
         "tooltip": false
     },
 

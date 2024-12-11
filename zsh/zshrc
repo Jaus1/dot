@@ -28,7 +28,7 @@ for cfg_module ($cfg_modules) {
 # ZSH_AUTOSUGGEST_CONFIG
 ZSH_AUTOSUGGEST_USE_ASYNC=true;
 
-
 # Load prompt
 export STARSHIP_CONFIG=$HOME/dot/config/starship/starship.toml
 eval "$(starship init zsh)"
+

@@ -12,6 +12,8 @@ padding.y = 10
 decorations = "Full"
 decorations_theme_variant = "Dark"
 
+dynamic_title = true
+
 # ====================== FONT ======================
 [font]
 normal.family = "Hack"
