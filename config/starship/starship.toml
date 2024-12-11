@@ -18,7 +18,7 @@ $character\
 add_newline = false
 
 [os]
-disabled = false
+disabled = true
 format='[$symbol]($style)'
 
 [username]
@@ -43,16 +43,15 @@ read_only = "󰌾"
 [git_branch]
 symbol = ""
 style = "green bold"
-# format = "[on](white) [$symbol $branch(:$remote_branch)]($style)"
 format = "[on](white) [$branch]($style)"
 
 [git_status]
 style = 'fg:green'
-format = '([ $all_status$ahead_behind]($style) )'
-modified = '*'
+# format = '([ $all_status$ahead_behind]($style) )'
+format = "[[($all_status)](218) ($ahead_behind$stashed)]($style)"
 
 [fill]
-symbol = "."
+symbol = "-"
 style = "bright-black"
 
 [character]
