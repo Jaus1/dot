@@ -1,0 +1,22 @@
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$cmd_duration\
+$line_break\
+$python\
+$character"""
+
+
+[directory]
+style = "green bold"
+
+[character]
+success_symbol = "[❯](white)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"
+
