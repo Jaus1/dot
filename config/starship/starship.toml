@@ -42,7 +42,7 @@ read_only = "󰌾"
 
 [git_branch]
 symbol = ""
-style = "green"
+style = "green bold"
 format = "[on](white italic) [$symbol $branch]($style)"
 
 [git_status]
@@ -59,8 +59,8 @@ symbol = "-"
 style = "bright-black"
 
 [character]
-success_symbol = "[](white bold)"
-error_symbol = "[❯](red)"
+success_symbol = "[](green)"
+error_symbol = "[](red bold)"
 vimcmd_symbol = "[❮](green)"
 
 # ❯
