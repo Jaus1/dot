@@ -59,8 +59,8 @@ symbol = "-"
 style = "bright-black"
 
 [character]
-success_symbol = "[](green)"
-error_symbol = "[](red bold)"
+success_symbol = "[>](green bold)"
+error_symbol = "[?](red bold)"
 vimcmd_symbol = "[❮](green)"
 
 # ❯
