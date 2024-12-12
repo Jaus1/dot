@@ -48,7 +48,7 @@ button {
 #workspaces button.active {
     background-color: rgb(39, 39, 39);
     color:whitesmoke;
-    border-bottom: 4px solid rgb(53, 164, 255);
+    border-bottom: 4px solid rgb(53, 208, 255);
 }
 #workspaces button.active:hover {
     color: wheat;
