@@ -52,8 +52,6 @@ format = "[on](white italic) [$symbol $branch]($style)"
 format = "[ $all_status ]($style)"
 style = "green bold"
 
-
-
 [time]
 disabled = false
 format = '[ $time]($style) '
@@ -63,6 +61,7 @@ style = 'bold green'
 
 
 [fill]
+disabled = false
 symbol = "-"
 style = "bright-black"
 
@@ -73,7 +72,6 @@ vimcmd_symbol = "[❮](green)"
 
 # ❯
 # ❮
-
 
 [aws]
 symbol = "  "
