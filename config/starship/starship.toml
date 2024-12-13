@@ -8,7 +8,6 @@ $git_state\
 $git_status\
 $cmd_duration\
 $fill\
-
 $python\
 $time\
 $line_break\
@@ -50,9 +49,18 @@ format = "[on](white italic) [$symbol $branch]($style)"
 # format = "[$all_status ](218)"
 # format = "[[ $all_status ](purple bold) ($modified)](purple bold)"
 # modified = "*"
-
 format = "[ $all_status ]($style)"
 style = "green bold"
+
+
+
+[time]
+disabled = false
+format = '[ $time]($style) '
+time_format = '%-I:%M %p'
+utc_time_offset = '-5'
+style = 'bold green'
+
 
 [fill]
 symbol = "-"
