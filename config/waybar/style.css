@@ -52,7 +52,7 @@ button {
 }
 #workspaces button.active:hover {
     color: wheat;
-    border-bottom: 2px solid wheat;
+    border-bottom: 4px solid wheat;
 }
 #workspaces button.urgent {
     color: #eb4d4b;
