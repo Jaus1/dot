@@ -16,42 +16,18 @@ dynamic_title = true
 
 # ====================== FONT ======================
 [font]
-normal.family = "Hack Nerd Font"
+normal.family = "Terminess Nerd Font"
 normal.style = "Regular"
-bold.family = "Hack Nerd Font"
-italic.family = "Hack Nerd Font"
-bold_italic.family = "Hack Nerd Font"
-size = 12.0
+bold.family = "Terminess Nerd Font"
+italic.family = "Terminess Nerd Font"
+bold_italic.family = "Terminess Nerd Font"
+size = 14.0
 offset.x = 0  # For letter spacing (default: 0)
-offset.y = 2  # For line spacing (default: 0)
+offset.y = 0  # For line spacing (default: 0)
 
 
 # ====================== COLORS ======================
 # GNOME Terminal Tango Dark
-
-[colors.primary]
-background = '#000000'
-foreground = '#d3d7cf'
-
-[colors.normal]
-black = '#2e3436'
-red = '#cc0000'
-green = '#4e9a06'
-yellow = '#c4a000'
-blue = '#3465a4'
-magenta = '#75507b'
-cyan = '#06989a'
-white = '#d3d7cf'
-
-[colors.bright]
-black = '#555753'
-red = '#ef2929'
-green = '#8ae234'
-yellow = '#fce94f'
-blue = '#729fcf'
-magenta = '#ad7fa8'
-cyan = '#34e2e2'
-white = '#eeeeec'
 
 # ====================== CURSOR ======================
 [cursor]

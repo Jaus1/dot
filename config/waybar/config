@@ -13,16 +13,17 @@
 
     "output": [ "DP-2" , "DP-1", "DP-3"],
     "layer": "top",
-    "position": "top",
+    "position": "bottom",
     "height": 36,
-    "modules-left": [
-        "hyprland/workspaces"
-        //  "hyprland/mode"
-        ],
+    // "modules-left": [
+    //     // "hyprland/workspaces"
+    //     //  "hyprland/mode"
+    //     ],
     "modules-center": [
         // "clock#date",
         //  "clock#time",
-         "hyprland/window"
+        //  "hyprland/window"
+        "hyprland/workspaces"
         ],
     "modules-right": [
         "network", 
@@ -35,7 +36,7 @@
         "disable-scroll": true,
         // "all-outputs": true, // false only shows workspace on active screen
         "on-click": "activate",
-        "format":"<span font='8' font-style='italic'>{name}</span> <span font='14' rise='-2000'>{icon}</span>",
+        "format":"<span font='8' font-style='italic'>{name}</span> <span font='20' rise='-2000'>{icon}</span>",
             "format-icons": {
             "1": "",
             "2": "󰨞",
@@ -67,7 +68,7 @@
         "tooltip-format": " {ifname} via {gwaddr}",
         "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠ {ifname}",
-        "format-alt": " {ifname}: {ipaddr}/{cidr}",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "format-icons": ["󰤟","󰤢","󰤥","󰤨"]
     },
 
@@ -93,7 +94,7 @@
 
     "clock#time": {
         "interval": 10,
-        "format": "{:%I:%M %p} <span rise='1200'>󰥔</span>",
+        "format": "{:%I:%M %p} <span rise='1000'>󰥔</span>",
         "format-alt": "{:%H:%M} 󰥔",
         "tooltip": false
     },
