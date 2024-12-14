@@ -36,12 +36,12 @@
         "disable-scroll": true,
         // "all-outputs": true, // false only shows workspace on active screen
         "on-click": "activate",
-        "format":"<span font='8' font-style='italic'>{name}</span> <span font='20' rise='-2000'>{icon}</span>",
+        "format":"<span font='8' font-style='italic'>{name}</span> <span font='18' rise='-2000'>{icon}</span>",
             "format-icons": {
             "1": "",
             "2": "󰨞",
             "3": "",
-            "4": "",
+            "4": "󰭹",
             "5": "󱄅",
             "6": "󰛨", 
         }
@@ -64,12 +64,13 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) {icon}",
-        "format-ethernet": " {ifname}",
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
+        "format-ethernet": " {ifname}",
+        // "tooltip-format": " {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠ {ifname}",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "format-icons": ["󰤟","󰤢","󰤥","󰤨"]
+        "format-icons": ["󰤟","󰤢","󰤥","󰤨"],
+        "tooltip": false
     },
 
     "pulseaudio": {
@@ -101,7 +102,7 @@
 
     "clock#date": {
         "interval": 60,
-        "format": "{:%a %D} <span rise='1200'></span>",
+        "format": "{:%a, %b %d %Y} <span rise='1200'></span>",
         "format-alt": "{:%F} <span rise='1200'></span>",
         "tooltip": false
     },
