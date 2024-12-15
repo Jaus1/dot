@@ -4,16 +4,25 @@
 
 [general]
 import = [
-    # "~/dot/config/alacritty/themes/dracula_plus.toml",
+    "~/dot/config/alacritty/themes/dracula_plus.toml",
     # "~/dot/config/alacritty/themes/carbonfox.toml",
-    "~/dot/config/alacritty/themes/xterm.toml",
-    
-    ]
+    # "~/dot/config/alacritty/themes/xterm.toml",
+    # "~/dot/config/alacritty/themes/ashes_dark.toml",
+    # "~/dot/config/alacritty/themes/base16_default_dark.toml",
+    # "~/dot/config/alacritty/themes/taerminal.toml",
+    # "~/dot/config/alacritty/themes/nord.toml",
+    # "~/dot/config/alacritty/themes/night_fox.toml",
+
+
+
+    # "~/dot/config/alacritty/themes/tomorrow_night_bright.toml",
+    # "~/dot/config/alacritty/themes/midnight_haze.toml",
+]
 
 # ====================== WINDOW ======================
 [window]
 
-opacity = 0.8
+opacity = 0.9
 padding.x = 15
 padding.y = 15
 decorations = "Full"
@@ -23,12 +32,12 @@ dynamic_title = true
 
 # ====================== FONT ======================
 [font]
-normal.family = "Hack Nerd Font"
-normal.style = "Regular"
-bold.family = "Hack Nerd Font"
-italic.family = "Hack Nerd Font"
-bold_italic.family = "Hack Nerd Font"
-size = 12
+normal.family = "Fira Code Nerd Font"
+normal.style = "Bold"
+bold.family = "Fira Code Nerd Font"
+italic.family = "Fira Code Nerd Font"
+bold_italic.family = "Fira Code Nerd Font"
+size = 10
 offset.x = 0  # For letter spacing (default: 0)
 offset.y = 0  # For line spacing (default: 0)
 
@@ -43,7 +52,7 @@ offset.y = 0  # For line spacing (default: 0)
 [cursor]
 
 # Cursor style
-style = { shape = "Block", blinking = "Always" }  # Default: shape = "Block", blinking = "Off"
+style = { shape = "Underline", blinking = "Always" }  # Default: shape = "Block", blinking = "Off"
 
 # Vi mode cursor style (falls back to the active value of the normal cursor if "None")
 vi_mode_style = "None"  # Default: "None"
@@ -55,7 +64,7 @@ blink_interval = 500  # Default: 750
 # blink_timeout = 5  # Default: 5
 
 # When true, the cursor will be rendered as a hollow box when the window is not focused
-unfocused_hollow = true  # Default: true
+unfocused_hollow = false  # Default: true
 
 # Thickness of the cursor relative to the cell width
-thickness = 0.1  # Default: 0.15
+thickness = 0.2  # Default: 0.15

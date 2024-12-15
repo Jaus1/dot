@@ -1,5 +1,4 @@
 format = """
-$os\
 $username\
 $hostname\
 $directory\
@@ -7,12 +6,9 @@ $git_branch\
 $git_state\
 $git_status\
 $cmd_duration\
-$fill\
-$python\
-$time\
 $line_break\
-$character\
-"""
+$python\
+$character"""
 
 add_newline = false
 
@@ -23,35 +19,46 @@ format = '[$symbol]($style)'
 [username]
 disabled = true
 show_always = true
-style_user = "bright-black"
-format = "[$user@]($style)"
+style_user = 'bright-black'
+format = '[$user@]($style)'
 
 [hostname]
+disabled = true
 ssh_only = false
-disabled = false
-style = "bright-black"
-ssh_symbol = " "
+style = 'bright-black'
+ssh_symbol = ' '
 format = '[$ssh_symbol$hostname]($style) '
 
 [directory]
-style = "cyan bold"
-truncation_length = 100
+style = 'cyan bold'
+truncation_length = 1
 # truncate_to_repo = false
-read_only = "󰌾"
+read_only = '󰌾'
 
+
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+# ❯
+# ❮
 
 [git_branch]
-symbol = ""
-style = "green bold"
-format = "[on](white italic) [$symbol $branch]($style)"
+symbol = ''
+style = '218 bold'
+format = '[$branch]($style)'
 
 [git_status]
-# format = "[[($modifed)](purple bold)($ahead_behind$stashed)]($style)"
-# format = "[$all_status ](218)"
-# format = "[[ $all_status ](purple bold) ($modified)](purple bold)"
-# modified = "*"
-format = "[ $all_status ]($style)"
-style = "green bold"
+format = '[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218 bold) ($ahead_behind$stashed)]($style)'
+style = '218 bold'
+conflicted = "​"
+untracked = "​"
+modified = "​"
+staged = "​"
+renamed = "​"
+deleted = "​"
+stashed = "≡"
+
+
 
 [time]
 disabled = true
@@ -60,184 +67,175 @@ time_format = '%-I:%M %p'
 utc_time_offset = '-5'
 style = 'bold green'
 
-
 [fill]
 disabled = true
-symbol = "-"
-style = "bright-black"
-
+symbol = ' '
+style = 'bright-black'
 
 [line_break]
 disabled = true
 
 
-[character]
-success_symbol = "[>](green bold)"
-error_symbol = "[?](red bold)"
-vimcmd_symbol = "[❮](green)"
-
-# ❯
-# ❮
 
 [aws]
-symbol = "  "
+symbol = '  '
 
 [buf]
-symbol = " "
+symbol = ' '
 
 [c]
-symbol = " "
+symbol = ' '
 
 [conda]
-symbol = " "
+symbol = ' '
 
 [crystal]
-symbol = " "
+symbol = ' '
 
 [dart]
-symbol = " "
+symbol = ' '
 
 [docker_context]
-symbol = " "
+symbol = ' '
 
 [elixir]
-symbol = " "
+symbol = ' '
 
 [elm]
-symbol = " "
+symbol = ' '
 
 [fennel]
-symbol = " "
+symbol = ' '
 
 [fossil_branch]
-symbol = " "
+symbol = ' '
 
 [git_commit]
 tag_symbol = '  '
 
 [golang]
-symbol = " "
+symbol = ' '
 
 [guix_shell]
-symbol = " "
+symbol = ' '
 
 [haskell]
-symbol = " "
+symbol = ' '
 
 [haxe]
-symbol = " "
+symbol = ' '
 
 [hg_branch]
-symbol = " "
+symbol = ' '
 
 
 [java]
-symbol = " "
+symbol = ' '
 
 [julia]
-symbol = " "
+symbol = ' '
 
 [kotlin]
-symbol = " "
+symbol = ' '
 
 [lua]
-symbol = " "
+symbol = ' '
 
 [memory_usage]
-symbol = "󰍛 "
+symbol = '󰍛 '
 
 [meson]
-symbol = "󰔷 "
+symbol = '󰔷 '
 
 [nim]
-symbol = "󰆥 "
+symbol = '󰆥 '
 
 [nix_shell]
-symbol = " "
+symbol = ' '
 
 [nodejs]
-symbol = " "
+symbol = ' '
 
 [ocaml]
-symbol = " "
+symbol = ' '
 
 [os.symbols]
-Alpaquita = " "
-Alpine = " "
-AlmaLinux = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Kali = " "
-Linux = " "
-Mabox = " "
-Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-RockyLinux = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Void = " "
-Windows = "󰍲 "
+Alpaquita = ' '
+Alpine = ' '
+AlmaLinux = ' '
+Amazon = ' '
+Android = ' '
+Arch = ' '
+Artix = ' '
+CentOS = ' '
+Debian = ' '
+DragonFly = ' '
+Emscripten = ' '
+EndeavourOS = ' '
+Fedora = ' '
+FreeBSD = ' '
+Garuda = '󰛓 '
+Gentoo = ' '
+HardenedBSD = '󰞌 '
+Illumos = '󰈸 '
+Kali = ' '
+Linux = ' '
+Mabox = ' '
+Macos = ' '
+Manjaro = ' '
+Mariner = ' '
+MidnightBSD = ' '
+Mint = ' '
+NetBSD = ' '
+NixOS = ' '
+OpenBSD = '󰈺 '
+openSUSE = ' '
+OracleLinux = '󰌷 '
+Pop = ' '
+Raspbian = ' '
+Redhat = ' '
+RedHatEnterprise = ' '
+RockyLinux = ' '
+Redox = '󰀘 '
+Solus = '󰠳 '
+SUSE = ' '
+Ubuntu = ' '
+Unknown = ' '
+Void = ' '
+Windows = '󰍲 '
 
 [package]
-symbol = "󰏗 "
+symbol = '󰏗 '
 
 [perl]
-symbol = " "
+symbol = ' '
 
 [php]
-symbol = " "
+symbol = ' '
 
 [pijul_channel]
-symbol = " "
+symbol = ' '
 
 [python]
-symbol = " "
+symbol = ' '
 
 [rlang]
-symbol = "󰟔 "
+symbol = '󰟔 '
 
 [ruby]
-symbol = " "
+symbol = ' '
 
 [rust]
-symbol = "󱘗 "
+symbol = '󱘗 '
 
 [scala]
-symbol = " "
+symbol = ' '
 
 [swift]
-symbol = " "
+symbol = ' '
 
 [zig]
-symbol = " "
+symbol = ' '
 
 [gradle]
-symbol = " "
+symbol = ' '
