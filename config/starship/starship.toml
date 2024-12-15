@@ -48,7 +48,7 @@ style = '218 bold'
 format = '[$branch]($style)'
 
 [git_status]
-format = '[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218 bold) ($ahead_behind$stashed)]($style)'
+format = '[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218 bold) ($ahead_behind$stashed) ]($style)'
 style = '218 bold'
 conflicted = "​"
 untracked = "​"
