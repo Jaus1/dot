@@ -11,39 +11,39 @@
     // Global configuration
     // -------------------------------------------------------------------------
 
-    "output": [ "DP-2" , "DP-1", "DP-3"],
-    "layer": "top",
-    "position": "bottom",
-    "height": 36,
-    // "modules-left": [
-    //     // "hyprland/workspaces"
-    //     //  "hyprland/mode"
-    //     ],
-    "modules-center": [
-        // "clock#date",
-        //  "clock#time",
-        //  "hyprland/window"
-        "hyprland/workspaces"
-        ],
-    "modules-right": [
-        "network", 
-        "pulseaudio",
-        "clock#date",
-        "clock#time"
-    ],
+    "output": ["DP-2", "DP-1", "DP-3"],
+        "layer": "top",
+            "position": "bottom",
+                "height": 36,
+                    // "modules-left": [
+                    //     // "hyprland/workspaces"
+                    //     //  "hyprland/mode"
+                    //     ],
+                    "modules-center": [
+                        // "clock#date",
+                        //  "clock#time",
+                        //  "hyprland/window"
+                        "hyprland/workspaces"
+                    ],
+                        "modules-right": [
+                            "network",
+                            "pulseaudio",
+                            "clock#date",
+                            "clock#time"
+                        ],
 
-    "hyprland/workspaces": {
+                            "hyprland/workspaces": {
         "disable-scroll": true,
-        // "all-outputs": true, // false only shows workspace on active screen
-        "on-click": "activate",
-        "format":"<span font='8' font-style='italic'>{name}</span> <span font='18' rise='-2000'>{icon}</span>",
-            "format-icons": {
+            "all-outputs": true, // false only shows workspace on active screen
+                "on-click": "activate",
+                    "format": "<span font='8' font-style='italic'>{name}</span> <span font='18' rise='-2000'>{icon}</span>",
+                        "format-icons": {
             "1": "",
-            "2": "󰨞",
-            "3": "",
-            "4": "󰭹",
-            "5": "󱄅",
-            "6": "󰛨", 
+                "2": "󰨞",
+                    "3": "",
+                        "4": "󰭹",
+                            "5": "󱄅",
+                                "6": "󰛨", 
         }
     },
 
@@ -64,30 +64,30 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) {icon}",
-        "format-ethernet": " {ifname}",
-        // "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "Disconnected ⚠ {ifname}",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "format-icons": ["󰤟","󰤢","󰤥","󰤨"],
-        "tooltip": false
+            "format-ethernet": " {ifname}",
+                // "tooltip-format": " {ifname} via {gwaddr}",
+                "format-linked": " {ifname} (No IP)",
+                    "format-disconnected": "Disconnected ⚠ {ifname}",
+                        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+                            "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+                                "tooltip": false
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} ",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "0% {icon} ",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
+            "format-bluetooth": "{volume}% {icon} {format_source}",
+                "format-bluetooth-muted": " {icon} {format_source}",
+                    "format-muted": "0% {icon} ",
+                        "format-source": "{volume}% ",
+                            "format-source-muted": "",
+                                "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+                "hands-free": "",
+                    "headset": "",
+                        "phone": "",
+                            "portable": "",
+                                "car": "",
+                                    "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
         // "on-click-right": "foot -a pw-top pw-top"
@@ -95,16 +95,16 @@
 
     "clock#time": {
         "interval": 10,
-        "format": "{:%I:%M %p} <span rise='1000'>󰥔</span>",
-        "format-alt": "{:%H:%M} 󰥔",
-        "tooltip": false
+            "format": "{:%I:%M %p} <span rise='1000'>󰥔</span>",
+                "format-alt": "{:%H:%M} 󰥔",
+                    "tooltip": false
     },
 
     "clock#date": {
         "interval": 60,
-        "format": "{:%a, %b %d %Y} <span rise='1200'></span>",
-        "format-alt": "{:%F} <span rise='1200'></span>",
-        "tooltip": false
+            "format": "{:%a, %b %d %Y} <span rise='1200'></span>",
+                "format-alt": "{:%F} <span rise='1200'></span>",
+                    "tooltip": false
     },
 
 

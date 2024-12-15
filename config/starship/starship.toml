@@ -18,13 +18,13 @@ add_newline = false
 
 [os]
 disabled = true
-format='[$symbol]($style)'
+format = '[$symbol]($style)'
 
 [username]
 disabled = true
 show_always = true
 style_user = "bright-black"
-format ="[$user@]($style)"
+format = "[$user@]($style)"
 
 [hostname]
 ssh_only = false
@@ -38,6 +38,7 @@ style = "cyan bold"
 truncation_length = 100
 # truncate_to_repo = false
 read_only = "󰌾"
+
 
 [git_branch]
 symbol = ""
@@ -53,7 +54,7 @@ format = "[ $all_status ]($style)"
 style = "green bold"
 
 [time]
-disabled = false
+disabled = true
 format = '[ $time]($style) '
 time_format = '%-I:%M %p'
 utc_time_offset = '-5'
@@ -61,9 +62,14 @@ style = 'bold green'
 
 
 [fill]
-disabled = false
+disabled = true
 symbol = "-"
 style = "bright-black"
+
+
+[line_break]
+disabled = true
+
 
 [character]
 success_symbol = "[>](green bold)"
