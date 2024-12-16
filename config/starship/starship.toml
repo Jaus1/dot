@@ -8,6 +8,8 @@ $git_status\
 $cmd_duration\
 $line_break\
 $python\
+$rust\
+$golang\
 $character"""
 
 add_newline = false
@@ -20,7 +22,7 @@ format = '[$symbol]($style)'
 disabled = true
 show_always = true
 style_user = 'bright-black'
-format = '[$user@]($style)'
+format = '[$user ]($style)'
 
 [hostname]
 disabled = true
@@ -31,7 +33,7 @@ format = '[$ssh_symbol$hostname]($style) '
 
 [directory]
 style = 'cyan bold'
-truncation_length = 1
+truncation_length = 0
 # truncate_to_repo = false
 read_only = '󰌾'
 
@@ -59,7 +61,6 @@ deleted = "​"
 stashed = "≡"
 
 
-
 [time]
 disabled = true
 format = '[ $time]($style) '
@@ -74,8 +75,6 @@ style = 'bright-black'
 
 [line_break]
 disabled = true
-
-
 
 [aws]
 symbol = '  '
@@ -115,6 +114,7 @@ tag_symbol = '  '
 
 [golang]
 symbol = ' '
+format = "[$symbol ]($style)"
 
 [guix_shell]
 symbol = ' '
@@ -127,7 +127,6 @@ symbol = ' '
 
 [hg_branch]
 symbol = ' '
-
 
 [java]
 symbol = ' '
@@ -217,6 +216,7 @@ symbol = ' '
 symbol = ' '
 
 [python]
+format = "[$symbol ]($style)"
 symbol = ' '
 
 [rlang]
@@ -227,6 +227,7 @@ symbol = ' '
 
 [rust]
 symbol = '󱘗 '
+format = "[$symbol ]($style)"
 
 [scala]
 symbol = ' '

@@ -5,11 +5,7 @@
 [general]
 import = [
     "~/dot/config/alacritty/themes/dracula_plus.toml",
-    # "~/dot/config/alacritty/themes/carbonfox.toml",
     # "~/dot/config/alacritty/themes/xterm.toml",
-    # "~/dot/config/alacritty/themes/ashes_dark.toml",
-    # "~/dot/config/alacritty/themes/base16_default_dark.toml",
-    # "~/dot/config/alacritty/themes/taerminal.toml",
     # "~/dot/config/alacritty/themes/nord.toml",
     # "~/dot/config/alacritty/themes/night_fox.toml",
 
@@ -32,15 +28,21 @@ dynamic_title = true
 
 # ====================== FONT ======================
 [font]
-normal.family = "Fira Code Nerd Font"
-normal.style = "Bold"
-bold.family = "Fira Code Nerd Font"
-italic.family = "Fira Code Nerd Font"
-bold_italic.family = "Fira Code Nerd Font"
-size = 10
+normal.family = "CaskaydiaCove Nerd Font"
+# normal.style = "SemiBold"
+bold.family = "CaskaydiaCove Nerd Font"
+italic.family = "CaskaydiaCove Nerd Font"
+bold_italic.family = "CaskaydiaCove Nerd Font"
+
+# normal.family = "JetBrainsMono Nerd Font"
+# normal.style = "Medium"
+# bold.family = "JetBrainsMono Nerd Font"
+# italic.family = "JetBrainsMono Nerd Font"
+# bold_italic.family = "JetBrainsMono Nerd Font"
+
+size = 11
 offset.x = 0  # For letter spacing (default: 0)
 offset.y = 0  # For line spacing (default: 0)
-
 
 # ====================== COLORS ======================
 # GNOME Terminal Tango Dark
@@ -67,4 +69,4 @@ blink_interval = 500  # Default: 750
 unfocused_hollow = false  # Default: true
 
 # Thickness of the cursor relative to the cell width
-thickness = 0.2  # Default: 0.15
+thickness = 0.25  # Default: 0.15

@@ -1,7 +1,7 @@
 * {
     /* font-family: Font Awesome, Roboto, Arial, sans-serif; */
     /* font-family: "DroidSansM Nerd Font"; */
-    font-family: "Hack Nerd Font Propo";
+    font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 14px;
     min-height: 0;
@@ -47,7 +47,7 @@ button {
     border: none;
     border-radius: 0;
     color: rgb(80, 80, 80);
-    padding-right: 10px;
+    padding-right: 15px;
     /* padding-left: 40px; */
 }
 
