@@ -4,13 +4,11 @@
 
 [general]
 import = [
-    "~/dot/config/alacritty/themes/dracula_plus.toml",
+    "~/dot/config/alacritty/themes/dracula.toml",
+    # "~/dot/config/alacritty/themes/dracula_plus.toml",
     # "~/dot/config/alacritty/themes/xterm.toml",
     # "~/dot/config/alacritty/themes/nord.toml",
     # "~/dot/config/alacritty/themes/night_fox.toml",
-
-
-
     # "~/dot/config/alacritty/themes/tomorrow_night_bright.toml",
     # "~/dot/config/alacritty/themes/midnight_haze.toml",
 ]
@@ -19,8 +17,8 @@ import = [
 [window]
 
 opacity = 0.9
-padding.x = 15
-padding.y = 15
+padding.x = 10
+padding.y = 10
 decorations = "Full"
 decorations_theme_variant = "Dark"
 
@@ -34,11 +32,11 @@ dynamic_title = true
 # italic.family = "CaskaydiaCove Nerd Font"
 # bold_italic.family = "CaskaydiaCove Nerd Font"
 
-normal.family = "JetBrainsMono Nerd Font"
+normal.family = "Fira Code Nerd Font"
 normal.style = "Medium"
-bold.family = "JetBrainsMono Nerd Font"
-italic.family = "JetBrainsMono Nerd Font"
-bold_italic.family = "JetBrainsMono Nerd Font"
+bold.family = "Fira Code Nerd Font"
+italic.family = "Fira Code Nerd Font"
+bold_italic.family = "Fira Code Nerd Font"
 
 size = 10
 offset.x = 0  # For letter spacing (default: 0)

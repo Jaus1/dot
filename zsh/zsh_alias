@@ -2,4 +2,4 @@
 
 alias ls='ls --color=auto'
 alias la='ls -al'
-alias code=codium
+#alias code=codium
